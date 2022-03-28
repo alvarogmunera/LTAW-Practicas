@@ -27,10 +27,10 @@ const server = http.createServer(function(req, res) {
     }
 
     //-- Extensión del recurso
-    type_file = recurso.split(".")[1];
-    file = '.' + recurso;
+    extension = recurso.split(".")[1];
+    recurso = '.' + recurso;
     console.log(' * Recurso solicitado: ' + recurso);
-    console.log(' * Extensión del recurso solicitado: ' + type_recurso);
+    console.log(' * Extensión del recurso solicitado: ' + extension);
 
       //-- Tipos de mime
     const type_mime = {
@@ -42,3 +42,6 @@ const server = http.createServer(function(req, res) {
         "gif" : "image/gif",
         "png" : "image/png",
     }; 
+
+    let mime = type_mime[extension];
+    console.log(' * Tipo de MIME: ' + mime); 
