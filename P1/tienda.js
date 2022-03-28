@@ -44,4 +44,19 @@ const server = http.createServer(function(req, res) {
     }; 
 
     let mime = type_mime[extension];
-    console.log(' * Tipo de MIME: ' + mime); 
+    console.log(' * Tipo de MIME: ' + mime);
+
+      //-- Lectura asincrona del fichero
+    fs.readFile(file, (err,data) => {
+    //-- Fichero no encontrado, página de error
+    if (err) {
+      // La página de error es un MIME tipo 'html'
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      console.log('\n404: Not Found');
+      file = './error.html';
+      data = fs.readFileSync(file);
+      res.write(data);
+      res.end();
+    }
+  });
+});
