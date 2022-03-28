@@ -25,3 +25,20 @@ const server = http.createServer(function(req, res) {
     } else { 
       recurso = url.pathname;
     }
+
+    //-- Extensión del recurso
+    type_file = recurso.split(".")[1];
+    file = '.' + recurso;
+    console.log(' * Recurso solicitado: ' + recurso);
+    console.log(' * Extensión del recurso solicitado: ' + type_recurso);
+
+      //-- Tipos de mime
+    const type_mime = {
+        "jpg" : "image/jpg",
+        "html" : "text/html",
+        "ico" : "image/ico",
+        "css" : "text/css",
+        "jpeg" : "image/jpeg",
+        "gif" : "image/gif",
+        "png" : "image/png",
+    }; 
