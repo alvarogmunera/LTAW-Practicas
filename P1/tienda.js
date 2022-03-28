@@ -48,15 +48,32 @@ const server = http.createServer(function(req, res) {
 
       //-- Lectura asincrona del fichero
     fs.readFile(file, (err,data) => {
+
     //-- Fichero no encontrado, página de error
     if (err) {
-      // La página de error es un MIME tipo 'html'
-      res.writeHead(404, {'Content-Type': 'text/html'});
-      console.log('\n404: Not Found');
-      file = './error.html';
-      data = fs.readFileSync(file);
-      res.write(data);
-      res.end();
+
+        // Cabecera de error
+        res.writeHead(404, {'Content-Type': 'text/html'});
+        console.log('\n404: Not Found');
+        file = './error.html';
+        data = fs.readFileSync(file);
+        res.write(data);
+        res.end();
+
+    }else{
+      
+        //-- Cabecera de ok
+        res.writeHead(200, {'Content-Type': mime});
+        console.log('\n200: OK');
+
+        //-- Recurso solicitado
+        res.write(data);
+        res.end();
     }
   });
 });
+
+//-- Activo el servidor
+server.listen(PUERTO);
+
+console.log("Escuchando en puerto: " + PUERTO + '\n');
