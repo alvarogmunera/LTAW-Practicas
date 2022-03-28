@@ -8,30 +8,26 @@
     <link rel="Stylesheet" type="text/css" href="style.css"/>
 </head>
 
-<body style="background-color: black;">
-  <div id="uno">
-    <img id="soccer" src="imagenes/logo.png">
-    <div id="laliga">
-      <span> <img src="imagenes/laliga.png"></span>
-    </div>
-    <svg class="RECTANGULO" style="left: 145px; top: 1141px;">
-      <rect fill="rgba(255,255,255,1)" id="Rect_ngulo_18" rx="64" ry="64" x="0" y="0" width="466" height="477">
-      </rect>
-    </svg>
-    <svg class="RECTANGULO" style="left: 724px; top: 1141px;">
-      <rect fill="rgba(255,255,255,1)" id="Rect_ngulo_18_" rx="64" ry="64" x="0" y="0" width="466" height="477">
-      </rect>
-    </svg>
-    <svg class="RECTANGULO" style="left: 1303px; top: 1141px;">
-      <rect fill="rgba(255,255,255,1)" id="Rect_ngulo_18_ba" rx="64" ry="64" x="0" y="0" width="466" height="477">
-      </rect>
-    </svg>
-
-      <img onclick="window.location.href = 'atm.html'" src="imagenes/atm.jpg" width="180px" height="150px">
-      <img onclick="window.location.href = 'rma.html'" src="imagenes/rma.jpg" width="240px" height="160px">
-      <img onclick="window.location.href = 'fcb.html'" src="imagenes/fcb.jpg" width="200px" height="150px">
-      <p id="jdt"></p>
-    </div>
-
+    <body onload="main()">
+      <div class="header">
+          <p class="logo_laliga">
+              <img src="imagenes/laliga.png" alt="laliga" id="laliga">
+          </p>
+          <a href="tienda.html"><img src="imagenes/logo.png" alt="logo" id="logo"></a>
+          <button class="btcarrito"><img src="imagenes/carrito.png" alt="carrito" id="carrito"></button>
+      </div>
+      <!--<div id="banner"><img src="./Imagenes/banner2.jpg" alt="Banner" id="img"></div>-->
+      <div class="contenido">
+          <a href="atm.html">
+              <button class="boton"><img src="imagenes/atm.jpg" alt="producto" class="producto" id="atm"><br>Atlético de Madrid</button>
+          </a>
+          <a href="rma.html">
+              <button class="boton"><img src="imagenes/rma.jpg" alt="producto" class="producto" id="rma"><br>Real Madrid CF</button>
+          </a>
+          <a href="fcb.html">
+              <button class="boton"><img src="imagenes/fcb.jpg" alt="producto" class="producto" id="fcb"><br>FC Barcelona</button>
+          </a>
+      </div>
+  </body>
 </body>
 </html>
