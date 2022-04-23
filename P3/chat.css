@@ -10,3 +10,9 @@ body{
     border-radius: 3px;
 
 }
+h1{
+    text-align: center;
+    font-family: 'Courier New', cursive;
+    padding-bottom: 5px;
+    font-size: 65px;
+}
