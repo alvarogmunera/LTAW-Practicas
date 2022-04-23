@@ -1,5 +1,12 @@
 body{
 	margin: 0;
-    background-color: #e6a4b4;
+    background-color: #00ff2a;
 	width: 100%;
+}
+.cabecera{
+    background-color: #00ff0d;
+    margin: auto;
+    padding: 1px;
+    border-radius: 3px;
+
 }
