@@ -31,3 +31,12 @@ h1{
     border: 2px outset #000000;
     text-align: center;
 }
+#msg {
+    width: 650px;
+    border: none;
+    padding: 10px 20px;
+    font: 14px/22px "Courier New";
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+}
