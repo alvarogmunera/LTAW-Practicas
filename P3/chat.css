@@ -52,14 +52,7 @@ button {
 
 
 }
-.writing{
-    width: 1050px;
-    height: 65px;
-    background-color: #15ff00;
-    padding: 10px 5px 0px 20px;
-    border: 5px solid #076910;
-    border-radius: 3px;
-}
+
 .chat{
     font-family: 'Courier New';
     background-color: #5dd45d;
