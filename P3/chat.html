@@ -13,17 +13,15 @@
         <script src="client.js" defer></script>
     </head>
     <body>
-        <div class="cabecera">
-          <h1>CHAT WEB</h1>
+      <div class="header">
+      </div>
+        <div class="screen">
+          <p id="display"></p>
         </div>
-        <div class="centro">
-          <div class="chat">
-            <h3>CHAT ROOM</h3>
-            <p id="display"></p>
-          </div>
-          <div class="writing">
-            <input type="text" size="80" style="height:30px" id="msg" autocomplete="off" />
-            <button type="button" id="send">SEND</button>
-          </div>
-        </div> 
-      </body>
+        <div class="barra">
+          <input type="text" placeholder="Type here..." autocomplete="off" id="msg_entry">
+          <button type="button" id="send">Send</button>          
+        </div>   
+<audio id="audio"><source src="music2.mp3"> </audio>
+    </body>
+</html>
