@@ -8,7 +8,7 @@ const audio = document.getElementById("audio");
 const socket = io();
 
 socket.on("message", (msg_entry)=>{
-    display.innerHTML + msg_entry;
+    display.innerHTML += "<br> > " + msg_entry;
   });
 
   //-- Al apretar el botón se envía un mensaje al servidor
