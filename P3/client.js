@@ -21,4 +21,6 @@ msg_entry.onchange = () => {
     if (msg_entry.value)
       socket.send(msg_entry.value);
       audio.play();
+    //-- Borrar el mensaje actual
+    msg_entry.value = "";
   }
