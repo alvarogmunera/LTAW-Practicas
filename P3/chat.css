@@ -22,30 +22,24 @@ body{
     color:#a85;
   
     }
-.centro{
-    font-family: 'Courier New', cursive;
-	border-radius: 20px;
-    margin: auto;
-    background-color: #000000;
-	box-sizing: content-box;
-	position: relative;
-	width: 1100px;
-	height: 525px;
-    padding: 1rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
-    border: 2px outset #000000;
-    text-align: center;
-}
-#msg {
-    width: 650px;
-    border: none;
-    padding: 10px 20px;
-    font: 14px/22px "Courier New";
-    margin-bottom: 10px;
-    border-radius: 5px;
-    resize: none;
-}
+    button{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(163, 131, 83);
+        color: white;
+        padding: 3px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 15px;
+        border-width: 3px;
+        border-color: white
+      }
+      button:hover {
+        background-color: #ffff;
+        color: #a85 ;
+        border-color:  #a85;
+        border-width: 3px;
+      }
 button {
     font-size: 35px;
     text-transform: uppercase;
