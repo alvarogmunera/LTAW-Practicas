@@ -40,18 +40,23 @@ body{
         border-color:  #a85;
         border-width: 3px;
       }
-button {
-    font-size: 35px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    background: #055802;
-    border-radius: 5px;
-    font: 28px/51px "Courier New";
-
-
-}
+      .screen{
+        width: 60%;
+        height: 400px;
+        /*background-color: #ffffffa4; */
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: auto;
+        text-align:left;
+        margin:0 auto;
+        padding:10px;
+        overflow: auto;
+        border-radius: 20px;
+        border:black 15px solid;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+      }
 .writing{
     width: 1050px;
     height: 65px;
