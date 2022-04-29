@@ -69,20 +69,21 @@ body{
         margin-bottom: 20px;
         border-radius: 20px;
       }
-.chat{
-    font-family: 'Courier New';
-    background-color: #5dd45d;
-    border: 15px solid #21bd29;
-    border-radius: 10px;
-    left: 50px;
-    top: 50px;
-    width: 1050px;
-    height: 400px;
-    padding: 10px;
-    margin: auto;
-    text-align:left;
-    margin:0 auto;
-    padding:10px;
-    overflow: auto;
-  
-  }
+      #display{
+        font-size: 25px;
+        margin: 0%;
+        overflow-y: scroll;
+      }
+      
+        input, textarea {
+          border: #a85 4px solid;
+          border-radius: 20px;
+          text-align: center;
+          margin  : 20px;
+          height: 30px;
+          width: 70%;
+          background-color: rgba(255, 255, 255, 1);
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 30px;
+          margin-left: 50px;
+        }
