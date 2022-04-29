@@ -15,11 +15,11 @@ body{
     height: 80px;
   }
   h3 {
-    font-family: "HARRYP__";
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     text-align: center;
     margin-top: 20px;
-    color:#a85;
+    color:#002efc;
   
     }
     button{
@@ -43,7 +43,6 @@ body{
       .screen{
         width: 60%;
         height: 400px;
-        /*background-color: #ffffffa4; */
         background-color: rgba(255, 255, 255, 0.9);
         padding: 0px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
