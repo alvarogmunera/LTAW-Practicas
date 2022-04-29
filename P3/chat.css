@@ -14,12 +14,14 @@ body{
     margin-bottom: 2%;
     height: 80px;
   }
-h1{
+  h3 {
+    font-family: "HARRYP__";
+    font-size: 50px;
     text-align: center;
-    font-family: 'Courier New', cursive;
-    padding-bottom: 5px;
-    font-size: 65px;
-}
+    margin-top: 20px;
+    color:#a85;
+  
+    }
 .centro{
     font-family: 'Courier New', cursive;
 	border-radius: 20px;
