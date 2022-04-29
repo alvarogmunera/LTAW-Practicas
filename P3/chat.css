@@ -57,14 +57,18 @@ body{
         overflow-y: scroll;
         scroll-behavior: smooth;
       }
-.writing{
-    width: 1050px;
-    height: 65px;
-    background-color: #15ff00;
-    padding: 10px 5px 0px 20px;
-    border: 5px solid #076910;
-    border-radius: 3px;
-}
+      .barra{
+        width: 60%;
+        height: 65px;
+        background-color: black;
+        padding: 10px;
+        margin: auto;
+        border:black 15px solid;
+        border-bottom:black 10px solid;
+        border-top:black 0px solid;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
 .chat{
     font-family: 'Courier New';
     background-color: #5dd45d;
