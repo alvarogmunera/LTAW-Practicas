@@ -1,7 +1,7 @@
 
 body{
 	margin: 0;
-    background-color: #00ff2a;
+    background: linear-gradient(to right, #000000, #002efc);
 	width: 100%;
 }
 .header{
@@ -24,7 +24,7 @@ body{
     }
     button{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: rgb(163, 131, 83);
+        background: linear-gradient(to right, #002efc, #000000);
         color: white;
         padding: 3px 10px;
         text-align: center;
@@ -36,8 +36,8 @@ body{
       }
       button:hover {
         background-color: #ffff;
-        color: #a85 ;
-        border-color:  #a85;
+        color: #002efc ;
+        border-color:  #002efc;
         border-width: 3px;
       }
       .screen{
@@ -76,7 +76,7 @@ body{
       }
       
         input, textarea {
-          border: #a85 4px solid;
+          border: #002efc 4px solid;
           border-radius: 20px;
           text-align: center;
           margin  : 20px;
