@@ -46,3 +46,47 @@ io.on('connect', (socket) => {
         counter -= 1;
         socket.broadcast.emit('message', '<b> EVANESCO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
       }); 
+
+        //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
+  socket.on("message", (msg)=> {
+    if (msg.startsWith("/")) {
+      console.log("Ojo, es un comando".orange);
+        if (msg == "/help") {
+            socket.send(
+              "Commands:" 
+            + "<br>"+ 
+            '<b> / help </b>' + "   " + 'Will show a list with all supported spells'
+            + "<br>"+ 
+            '<b> / list </b>' + "   " + 'Will return the number of connected magicians'
+            + "<br>"+ 
+            '<b> / hello </b>' + "   " + "The server will return the magic greeting"
+            + "<br>"+ 
+            '<b> / date </b>' + "   " + "It will return the date");
+        }else if (msg == "/list") {
+            socket.send("Magicians in the chat: " + "<b>"+ counter + "</b>");
+        }else if (msg == "/hello") {
+            socket.send("Welcome! Like Hagrid told Harry: "  + "<b> You are a wizard </b>");
+        }else if (msg == "/date") {
+            let now= new Date();
+            console.log("date".green + 'La fecha actual es',now);
+            socket.send("Today is:  <b>" + now + "</b>");
+            
+        }else{
+          console.log("Out muggle".purple);
+        }    
+    }else{
+      console.log("Mensaje Recibido!: " + socket.id + msg.blue);
+
+      //-- Reenviarlo a todos los clientes conectados
+      
+      io.send("<b>" + socket.id + "</b> : "  + msg);
+      
+    }
+  });
+
+});
+
+//-- Lanzar el servidor HTTP
+//-- ¡Que empiecen los juegos de los WebSockets!
+server.listen(PUERTO);
+console.log("Escuchando en puerto: " + PUERTO);
