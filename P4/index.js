@@ -24,3 +24,14 @@ info3.textContent = process.cwd();
 info4.textContent = process.versions.node;
 info5.textContent = process.versions.chrome;
 info6.textContent = process.versions.electron;
+
+//-- usuarios
+electron.ipcRenderer.on('users', (event, message) => {
+    console.log("Recibido: " + message);
+    usuarios.textContent = message;
+});
+btn_test.onclick = () => {
+    console.log("Botón apretado!");
+
+    electron.ipcRenderer.invoke('test', "Testing app: Patronus inbox");
+}
