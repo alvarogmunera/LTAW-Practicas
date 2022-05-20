@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0px 0 0 0;
+    top: 0;
+   background-image: url('a.jpg');
+   background-size:auto;
+    background-position: center;
+   font-family: 'LUMOS';
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
