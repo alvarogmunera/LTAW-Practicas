@@ -1,0 +1,88 @@
+
+body{
+	margin: 0;
+    background: linear-gradient(to right, #000000, #002efc);
+	width: 100%;
+}
+.header{
+    display: grid; 
+    align-items: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  
+    margin-bottom: 2%;
+    height: 80px;
+  }
+  h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color:#002efc;
+  
+    }
+    button{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: linear-gradient(to right, #002efc, #000000);
+        color: white;
+        padding: 3px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        border-radius: 15px;
+        border-width: 3px;
+        border-color: white
+      }
+      button:hover {
+        background-color: #ffff;
+        color: #002efc ;
+        border-color:  #002efc;
+        border-width: 3px;
+      }
+      .screen{
+        width: 60%;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: auto;
+        text-align:left;
+        margin:0 auto;
+        padding:10px;
+        overflow: auto;
+        border-radius: 20px;
+        border:black 15px solid;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+      }
+      .barra{
+        width: 60%;
+        height: 65px;
+        background-color: black;
+        padding: 10px;
+        margin: auto;
+        border:black 15px solid;
+        border-bottom:black 10px solid;
+        border-top:black 0px solid;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+      #display{
+        font-size: 25px;
+        margin: 0%;
+        overflow-y: scroll;
+      }
+      
+        input, textarea {
+          border: #002efc 4px solid;
+          border-radius: 20px;
+          text-align: center;
+          margin  : 20px;
+          height: 30px;
+          width: 70%;
+          background-color: rgba(255, 255, 255, 1);
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 30px;
+          margin-left: 50px;
+        }
