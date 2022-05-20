@@ -39,3 +39,28 @@ li{
 #info1,#info2, #info3, #info4, #info5, #info5, #info6{
 color: #7c0000;
 }
+#left{
+  float:left;
+  width: 52%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  height: 660px;
+  border-radius: 10px;
+}
+
+
+h3 {
+  font-family: "HARRYP__";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  color:#7c0000;;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  }
+  h2{
+    font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
