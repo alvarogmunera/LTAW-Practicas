@@ -1,40 +1,40 @@
 body {
-    margin: 0;
-    padding: 0px 0 0 0;
-    top: 0;
-   background-image: url('a.jpg');
-   background-size:auto;
-    background-position: center;
-   font-family: 'LUMOS';
-    box-sizing: border-box;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .header{
-    /* Enable flex mode. */
-    display: grid; 
-    /* Align items vertically in the center. */
-    align-items: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    
-    margin-bottom: 2%;
-    height: 80px;
-  }
+  margin: 0;
+  padding: 0px 0 0 0;
+  top: 0;
+  background-image: url('a.jpg');
+  background-size:auto;
+  background-position: center;
+  font-family: 'LUMOS';
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.header{
+  /* Enable flex mode. */
+  display: grid; 
+  /* Align items vertically in the center. */
+  align-items: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+  margin-bottom: 2%;
+  height: 80px;
+}
 
-  #right{
-    float:right;
-    width: 45%;
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    height: 660px;
-    border-radius: 10px;
+#right{
+  float:right;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  height: 660px;
+  border-radius: 10px;
 }
 li{
-  text-align: justify;
-  font-size: 23px;
-  font-weight:lighter;
+text-align: justify;
+font-size: 23px;
+font-weight:lighter;
 }
 #info1,#info2, #info3, #info4, #info5, #info5, #info6{
 color: #7c0000;
@@ -58,9 +58,30 @@ h3 {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   padding: 10px;
-  }
-  h2{
-    font-size: 30px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
+}
+h2{
+  font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+  font-family: "LUMOS";
+  background-color: rgb(163, 131, 83);
+  color:honeydew;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white
+}
+
+button:hover {
+  background-color: #7c0000;
+  color: #a85 ;
+  border-color:  #a85;
+  border-width: 3px;
+  text-decoration: none;
+}
