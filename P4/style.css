@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0px 0 0 0;
+    top: 0;
+   background-image: url('a.jpg');
+   background-size:auto;
+    background-position: center;
+   font-family: 'LUMOS';
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header{
+    /* Enable flex mode. */
+    display: grid; 
+    /* Align items vertically in the center. */
+    align-items: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+    margin-bottom: 2%;
+    height: 80px;
+  }
