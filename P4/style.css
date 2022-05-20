@@ -85,3 +85,21 @@ button:hover {
   border-width: 3px;
   text-decoration: none;
 }
+
+.screen{
+  width: 60%;
+  height: 400px;
+  /*background-color: #ffffffa4; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0px;
+  font-family: 'LUMOS';
+  margin: auto;
+  text-align:left;
+  margin:0 auto;
+  padding:10px;
+  overflow: auto;
+  border-radius: 20px;
+  border:black 15px solid;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
