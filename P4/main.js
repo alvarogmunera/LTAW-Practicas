@@ -122,3 +122,10 @@ electron.app.on('ready', () => {
     win.webContents.send('ip', 'http://' + ip.address() + ':' + PUERTO);
   });
 });
+
+//-- Esperar a recibir los mensajes de botón apretado (Test) del proceso de 
+//-- renderizado. Al recibirlos se escribe una cadena en la consola
+electron.ipcMain.handle('test', (event, msg) => {
+    io.send(msg);
+    win.webContents.send('msg', msg);
+  });
