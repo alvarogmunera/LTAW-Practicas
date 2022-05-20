@@ -93,3 +93,32 @@ io.on('connect', (socket) => {
     });
   
   });
+
+//-- Lanzar el servidor HTTP
+server.listen(PUERTO);
+console.log("Escuchando en puerto: " + PUERTO);
+
+console.log("Arrancando electron...");
+//-- Punto de entrada. En cuanto electron está listo,
+//-- ejecuta esta función
+electron.app.on('ready', () => {
+    console.log("Evento Ready!");
+
+    //-- Crear la ventana principal de nuestra aplicación
+    win = new electron.BrowserWindow({
+        width: 1000,   //-- Anchura 
+        height: 850,  //-- Altura
+
+        //-- Permitir que la ventana tenga ACCESO AL SISTEMA
+        webPreferences: {
+          nodeIntegration: true,
+          contextIsolation: false
+        }
+    });
+
+  win.loadFile("chat_electron.html");
+
+  win.on('ready-to-show', () => {
+    win.webContents.send('ip', 'http://' + ip.address() + ':' + PUERTO);
+  });
+});
