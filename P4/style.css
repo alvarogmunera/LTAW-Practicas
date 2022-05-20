@@ -22,3 +22,20 @@ body {
     margin-bottom: 2%;
     height: 80px;
   }
+
+  #right{
+    float:right;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    height: 660px;
+    border-radius: 10px;
+}
+li{
+  text-align: justify;
+  font-size: 23px;
+  font-weight:lighter;
+}
+#info1,#info2, #info3, #info4, #info5, #info5, #info6{
+color: #7c0000;
+}
