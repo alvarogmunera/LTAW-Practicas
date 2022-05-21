@@ -1,10 +1,10 @@
+
 body {
-  margin: 0;
   padding: 0px 0 0 0;
   top: 0;
-  background-image: url('a.jpg');
-  background-size:auto;
-  background-position: center;
+  margin: 0;
+  background: linear-gradient(to right, #000000, #002efc);
+  width: 100%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   box-sizing: border-box;
   margin-left: 5%;
