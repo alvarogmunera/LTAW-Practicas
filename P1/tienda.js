@@ -45,6 +45,15 @@ const server = http.createServer((req, res)=>{
                 folder_exists = true;
             }
         });
+        if (folder_exists){
+          url.pathname = '/' + pathfile[pathfile.length - 2] + '/' + pathfile[pathfile.length - 1];
+      } else {
+          url.pathname = '/' + pathfile[pathfile.length - 1];
+      }
+      path += url.pathname;
+      let ext = path.split('.')[2];
+      content_type = type[ext];
+  }
 }
 
 
