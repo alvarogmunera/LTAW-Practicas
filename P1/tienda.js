@@ -1,10 +1,9 @@
-//-- Definiciones de modulos
+//-- Importar el módulo HTTP
 const http = require('http');
+//-- Importar el módulo FS
 const fs = require('fs');
-const url = require('url');
 
-//-- Definiciones del puerto
-const PUERTO = 9090;
+const PUERTO = 9000;
 
 //-- Creo el servidor
 const server = http.createServer(function(req, res) {
