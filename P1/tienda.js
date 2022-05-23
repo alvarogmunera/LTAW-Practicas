@@ -54,7 +54,33 @@ const server = http.createServer((req, res)=>{
       let ext = path.split('.')[2];
       content_type = type[ext];
   }
-}
+  
+    //-- Generar la respusta en función de las variables
+    //-- code, code_msg y page
+    res.statusCode = code;
+    res.statusMessage = code_msg;
+
+    fs.readFile(path, (err, data) => {
+        if (err == null) {
+            console.log("Leyendo archivo", path + "...");
+            console.log("Lectura completada...");
+            res.setHeader('Content-Type', content_type);
+            res.write(data);
+            res.end();
+        } else {
+            res.statusCode = 404;
+            res.statusMessage = "Not Found";
+            path = './front-end/error404.html';
+            console.log("Leyendo archivo", path + "...");
+            data = fs.readFileSync(path);
+            res.setHeader('Content-Type', 'text/html');
+            res.write(data);
+            res.end()
+        }
+    })
+    
+});
+
 
 
 //-- Activo el servidor
