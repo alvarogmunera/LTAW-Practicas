@@ -28,6 +28,23 @@ const server = http.createServer((req, res)=>{
   let path = "./front-end";
   let content_type = "text/html";
   let folder_exists = false;
+
+  //-- Analizar el recurso
+    //-- Construir el objeto url con la url de la solicitud
+    const url = new URL(req.url, 'http://' + req.headers['host']);
+
+    if (url.pathname == '/') {
+        path += '/main.html';
+    } else if (url.pathname == '/favicon.ico') {
+        path += '/Imagenes/deathstar.png';
+        content_type = "image/png";
+    } else {
+        pathfile = url.pathname.split('/');
+        folder.forEach((carpeta) =>{
+            if ((pathfile[pathfile.length - 2]) == carpeta) {
+                folder_exists = true;
+            }
+        });
 }
 
 
