@@ -5,6 +5,17 @@ const fs = require('fs');
 
 const PUERTO = 9000;
 
+const type = {
+  "plain": "text/plain",
+  "html": "text/html",
+  "css": "text/css",
+  "js": "text/javascript",
+  "gif": "image/gif",
+  "jpg": "image/jpg",
+  "png": "image/png",
+  "mp3": "audio/mpeg3"
+};
+
 //-- Creo el servidor
 const server = http.createServer(function(req, res) {
     //-- Petición recibida
@@ -28,18 +39,7 @@ const server = http.createServer(function(req, res) {
     extension = recurso.split(".")[1];
     recurso = '.' + recurso;
     console.log(' * Recurso solicitado: ' + recurso);
-    console.log(' * Extensión del recurso solicitado: ' + extension);
-
-      //-- Tipos de mime
-    const type_mime = {
-        "jpg" : "image/jpg",
-        "html" : "text/html",
-        "ico" : "image/ico",
-        "css" : "text/css",
-        "jpeg" : "image/jpeg",
-        "gif" : "image/gif",
-        "png" : "image/png",
-    }; 
+    console.log(' * Extensión del recurso solicitado: ' + extension); 
 
     let mime = type_mime[extension];
     console.log(' * Tipo de MIME: ' + mime);
