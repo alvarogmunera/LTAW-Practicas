@@ -8,6 +8,10 @@ const colors = require('colors');
 const snakeNames = require('snake-names');
 const ip = require('ip');
 const PUERTO = 9000;
+const app = express();
+const server = http.Server(app);
+const io = socket(server);
+let counter = 0;
 
 //-- Definir el punto de entrada principal de mi aplicación web
 app.get('/', (req, res) => {
@@ -116,7 +120,7 @@ electron.app.on('ready', () => {
         }
     });
 
-  win.loadFile("chat_electron.html");
+  win.loadFile("chat.html");
 
   win.on('ready-to-show', () => {
     win.webContents.send('ip', 'http://' + ip.address() + ':' + PUERTO);
