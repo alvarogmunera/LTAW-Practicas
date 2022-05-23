@@ -80,7 +80,9 @@ const server = http.createServer((req, res)=>{
     })
     
 });
+server.listen(PUERTO);
 
+console.log("Servidor de la tienda funcionando. Escuchando en puerto: " + PUERTO);
 
 
 //-- Activo el servidor
