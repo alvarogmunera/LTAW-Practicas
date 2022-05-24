@@ -4,7 +4,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PUERTO = 9000;
+const PUERTO = 9090;
 
 const server = http.createServer(function(req,res) {
   let myurl = new URL(req.url, "http://" + req.headers["host"]);
@@ -19,6 +19,7 @@ const server = http.createServer(function(req,res) {
 file_extension = path.split(".")[1];
 path = "." + path;
 const type = {
+  "plain": "text/plain",
   "html": "text/html",
   "css": "text/css",
   "jpg": "image/jpg",
