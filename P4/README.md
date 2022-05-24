@@ -38,3 +38,7 @@ Para desplegar el chat es necesario importar los siguientes modulos:
 * SnakeNames
 
 Para instalar los modulos no incluidos utilizar *npm i*
+
+**DOCUMENTACION TECNICA**
+
+![](https://github.com/alvarogmunera/LTAW-Practicas/blob/main/P4/wiki.jpg)
