@@ -36,6 +36,7 @@ const type = {
           data = fs.readFileSync(path);
         }else {
           res.writeHead(200, {'Content-Type': mime});
+          console.log("Recurso recibido: " + mime);
           console.log("200 OK")
         }
         res.write(data);
