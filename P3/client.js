@@ -27,3 +27,10 @@ msg_entry.onchange = () => {
     //-- Borrar el mensaje actual
     msg_entry.value = "";
   }
+msg_entry.onchange = () => {
+  if (msg_entry.value)
+    socket.send(msg_entry.value);
+    audio.play();
+  
+  msg_entry.value = "";
+}

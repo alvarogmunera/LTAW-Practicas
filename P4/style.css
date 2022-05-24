@@ -67,15 +67,15 @@ h2{
 
 button{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: rgb(163, 131, 83);
-  color:honeydew;
+  background-color: rgb(246, 250, 0);
+  color:rgb(0, 0, 0);
   padding: 3px 10px;
   text-align: center;
   text-decoration: none;
   font-size: 30px;
   border-radius: 15px;
   border-width: 3px;
-  border-color: white
+  border-color: rgb(0, 0, 0)
 }
 
 button:hover {

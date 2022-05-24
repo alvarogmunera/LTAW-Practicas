@@ -37,7 +37,7 @@ electron.ipcRenderer.on('users', (event, message) => {
 btn_test.onclick = () => {
     console.log("Botón apretado!");
 
-    electron.ipcRenderer.invoke('test', "Testing app: Patronus inbox");
+    electron.ipcRenderer.invoke('test', "Testing app: test message");
 }
 
 //-- Mensajes de los clientes

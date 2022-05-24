@@ -34,14 +34,14 @@ io.on('connect', (socket) => {
       //-- Enviar numero de usuarios al renderer
     win.webContents.send('users', counter);
      socket.id =  snakeNames.random() ;
-     socket.send('<b> APARECIUM! </b>' + "  "+  'Welcome to magic chat' + "  " + socket.id + "!" );
-     win.webContents.send('msg_client', '<b> APARECIUM! </b>' + "  "+  'Welcome to magic chat' + "  " + socket.id + "!" );
+     socket.send('<b> Hello! </b>' + "  "+  'Welcome to the best chat' + "  " + socket.id + "!" );
+     win.webContents.send('msg_client', '<b> Hello! </b>' + "  "+  'Welcome to the best chat' + "  " + socket.id + "!" );
     
        //-- Enviar mensaje de nuevo usuario a todos los usuarios
-    io.send( '<b> ALOHOMORA! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
+    io.send( '<b> Great! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
   
     //-- Enviar al render mensaje de conexion
-    win.webContents.send('msg_client', '<b> ALOHOMORA! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
+    win.webContents.send('msg_client', '<b> Great! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
   
     //-- Evento de desconexión
     socket.on('disconnect', function(){
@@ -50,10 +50,10 @@ io.on('connect', (socket) => {
       win.webContents.send('users', counter);
   
           //-- Enviar mensaje de desconexión de usuario a todos los usuarios
-          io.send( '<b> EVANESCO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
+          io.send( '<b> CIAO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
   
           //-- Enviar al render mensaje de desconexion
-          win.webContents.send('msg_client', '<b> EVANESCO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
+          win.webContents.send('msg_client', '<b> CIAO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
     });  
   
   
@@ -69,22 +69,22 @@ io.on('connect', (socket) => {
               + "<br>"+ 
               '<b> / help </b>' + "   " + 'Will show a list with all supported spells'
               + "<br>"+ 
-              '<b> / list </b>' + "   " + 'Will return the number of connected magicians'
+              '<b> / list </b>' + "   " + 'Will return the number of connected users'
               + "<br>"+ 
-              '<b> / hello </b>' + "   " + "The server will return the magic greeting"
+              '<b> / hello </b>' + "   " + "The server will return the hello message"
               + "<br>"+ 
               '<b> / date </b>' + "   " + "It will return the date");
           }else if (msg == "/list") {
-              socket.send("Magicians in the chat: " + "<b>"+ counter + "</b>");
+              socket.send("Users in the chat: " + "<b>"+ counter + "</b>");
           }else if (msg == "/hello") {
-              socket.send("Welcome! Like Hagrid told Harry: "  + "<b> You are a wizard </b>");
+              socket.send("Welcome!: "  + "<b> Nice to meet you! </b>");
           }else if (msg == "/date") {
               let now= new Date();
               console.log("date".green + 'La fecha actual es',now);
               socket.send("Today is:  <b>" + now + "</b>");
               
           }else{
-            console.log("Out muggle".purple);
+            console.log("Enga".purple);
           }    
       }else{
         console.log("Mensaje Recibido!: " + socket.id + msg.blue);

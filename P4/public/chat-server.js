@@ -35,16 +35,16 @@ io.on('connect', (socket) => {
 
    counter += 1;
    socket.id =  snakeNames.random() ;
-   socket.send('<b> APARECIUM! </b>' + "  "+  'Welcome to magic chat' + "  " + socket.id + "!" );
+   socket.send('<b> Hello! </b>' + "  "+  'Welcome to the best chat' + "  " + socket.id + "!" );
   
-  socket.broadcast.emit('message', '<b> ALOHOMORA! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
+  socket.broadcast.emit('message', '<b> Great! </b>' + "  "+ "<i>" + socket.id  + "</i> " +'joins the chat. ');
 
 
     //-- Evento de desconexión
     socket.on('disconnect', function(){
         console.log('** CONEXIÓN TERMINADA **'.yellow);
         counter -= 1;
-        socket.broadcast.emit('message', '<b> EVANESCO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
+        socket.broadcast.emit('message', '<b> CIAO! </b>' + "  "+ "<i>" +  socket.id  + " </i> " + 'left the chat. ');
       }); 
 
         //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
@@ -57,22 +57,22 @@ io.on('connect', (socket) => {
             + "<br>"+ 
             '<b> / help </b>' + "   " + 'Will show a list with all supported spells'
             + "<br>"+ 
-            '<b> / list </b>' + "   " + 'Will return the number of connected magicians'
+            '<b> / list </b>' + "   " + 'Will return the number of connected users'
             + "<br>"+ 
-            '<b> / hello </b>' + "   " + "The server will return the magic greeting"
+            '<b> / hello </b>' + "   " + "The server will return the hello message"
             + "<br>"+ 
             '<b> / date </b>' + "   " + "It will return the date");
         }else if (msg == "/list") {
-            socket.send("Magicians in the chat: " + "<b>"+ counter + "</b>");
+            socket.send("Users in the chat: " + "<b>"+ counter + "</b>");
         }else if (msg == "/hello") {
-            socket.send("Welcome! Like Hagrid told Harry: "  + "<b> You are a wizard </b>");
+            socket.send("Welcome!: "  + "<b> Nice to meet you! </b>");
         }else if (msg == "/date") {
             let now= new Date();
             console.log("date".green + 'La fecha actual es',now);
             socket.send("Today is:  <b>" + now + "</b>");
             
         }else{
-          console.log("Out muggle".purple);
+          console.log("Enga".purple);
         }    
     }else{
       console.log("Mensaje Recibido!: " + socket.id + msg.blue);
