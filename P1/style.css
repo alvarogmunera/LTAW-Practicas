@@ -10,6 +10,14 @@ body{
         text-align: center;
         color: whitesmoke;
     }
+
+    .header2{
+        background-color: black;
+        height: 100px;
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 135px;
+    }
     
     
     .logo_laliga{
@@ -59,14 +67,14 @@ body{
     }
     
     .contenido{
-        margin-top: 20px;
+        margin-top: 115px;
         text-align: center;
     }
     
     .producto{
         text-align: center;
-        height: 150px;
-        margin-right: 50px;
+        height: 180px;
+        margin-right: 0px;
         opacity: 100%;
     }
     
@@ -79,9 +87,9 @@ body{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 15px;
         color: white;
-        padding: 15px;
+        padding: 25px;
         background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 50px;
+        border-radius: 100px;
         margin-left: 20px;
         margin-right: 20px;
     }
