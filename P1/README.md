@@ -1,4 +1,5 @@
  # Práctica 1
+ ***
 
  **MANUAL DE USUARIO**
 
@@ -9,7 +10,7 @@
  
  2. Ponemos la siguiente URL en nuestro navegador:
  > 127.0.0.1:9090
-
+***
  
 **DOCUMENTACION TECNICA**
 
@@ -22,3 +23,7 @@
 >Cuando se selecciona un articulo de la tienda o se vuelva a la página principal de ésta, todo estará registrado en el terminal con un mensaje de "200 ok"
 >
 >Sin embargo, si se accede a un recursos no existente, genera una respuesta de error, ya que no existe el recurso solicitado.
+***
+**IMÁGENES**
+
+![](https://github.com/alvarogmunera/LTAW-Practicas/blob/main/P1/wiki.jpg)
