@@ -1,5 +1,7 @@
  # Práctica 4
 
+ ***
+
   **MANUAL DE USUARIO**
 
  Para ejecutar lanzar la aplicación con Electron:
@@ -22,6 +24,7 @@ En la app lanzada con Electron se mostrarán los siguientes elementos:
 * Display con la información intercambiada
 * Botón de pruebas
 
+***
 **DOCUMENTACION TECNICA**
 
 El chat se despliega en el PUERTO 9000 de la direccion de IP local.
@@ -38,7 +41,7 @@ Para desplegar el chat es necesario importar los siguientes modulos:
 * SnakeNames
 
 Para instalar los modulos no incluidos utilizar *npm i*
-
-**DOCUMENTACION TECNICA**
+***
+**IMÁGENES**
 
 ![](https://github.com/alvarogmunera/LTAW-Practicas/blob/main/P4/wiki.jpg)
