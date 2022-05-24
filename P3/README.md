@@ -1,5 +1,5 @@
  # Práctica 3
-
+***
 
  **MANUAL DE USUARIO**
 
@@ -26,6 +26,7 @@
 * Número de usuarios conectados
 * Mensajes directos entre usuarios
 * Sonidos cuando se reciben mensajes
+***
 
 **DOCUMENTACIÓN TÉCNICA**
 
@@ -40,3 +41,7 @@ Para desplegar el chat es necesario importar los siguientes modulos:
 * snakeNames
 
 Para instalar los modulos no incluidos utilizar *npm i*
+***
+**IMÁGENES**
+
+![](https://github.com/alvarogmunera/LTAW-Practicas/blob/main/P3/wiki.jpg)
